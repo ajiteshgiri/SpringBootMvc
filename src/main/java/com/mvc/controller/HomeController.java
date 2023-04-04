@@ -16,31 +16,33 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
 import com.mvc.model.Content;
+import com.mvc.model.Role;
+import com.mvc.model.User;
 import com.mvc.service.ContentService;
+import com.mvc.service.UserService;
 
 @Controller
 public class HomeController {
 
 	@Autowired
 	ContentService service;
+	@Autowired
+	UserService userService;
 	
-	@GetMapping("/")
-	public String home() {
-		return "index";
+	@GetMapping("/dashboard")
+	public String home(HttpServletRequest req) {
+		if(req.getSession().getAttribute("user") != null) {
+			return "/admin/index";
+		}else {
+			return "redirect:/login";
+		}
+		
 	}
 	@GetMapping("/addContent")
 	public String content(@ModelAttribute Content content) {
-		return "register";
+		return "/admin/register";
 	}
-	
-	@PostMapping("/register")
-	public String registersave(@ModelAttribute Content content, Model model) {	
-		Content regObj = content;
-		service.save(regObj);
-		model.addAttribute("message", "content addedsuccesful successfull");
-		return "register";
-	}
-	
+
 	@GetMapping("/edit/{id}")
 	public String edit(@ModelAttribute Content content, @PathVariable int id,Model model, RedirectAttributes attributes) {
 			Optional<Content> reg = service.getbyId(id);
@@ -58,27 +60,27 @@ public class HomeController {
 	public String editPost(@ModelAttribute Content content,Model model) {
 		Content reg = service.update(content);
 		model.addAttribute("message", "content update successfull");
-		return "editRegister";
+		return "/admin/editRegister";
 	}
 	
 	@GetMapping("/delete/{id}")
 	public String delete(@PathVariable int id,Model model) {
 		 service.delete(id);
 		 System.out.println("delete successfull");
-		return "editRegister";
+		return "/admin/editRegister";
 	}
 	
 	@GetMapping("/all")
 	public String allcontent(Model model) {
 		List<Content> contList = service.getAllContent();
 		model.addAttribute("contList", contList);
-		return "contentList";
+		return "/admin/contentList";
 	}
 	
 	@GetMapping("/users-profile")
 	public String profile(Model model) {
 		
-		return "users-profile";
+		return "/admin/users-profile";
 	}
 	
 	

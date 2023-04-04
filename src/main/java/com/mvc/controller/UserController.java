@@ -12,6 +12,8 @@ import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
+import com.mvc.model.Content;
+import com.mvc.model.Role;
 import com.mvc.model.User;
 import com.mvc.service.UserService;
 
@@ -21,9 +23,27 @@ public class UserController {
 	@Autowired
 	UserService userService;
 
-	@GetMapping("/login")
+	@GetMapping("/register")
+	public String register(@ModelAttribute User user, Model model) {
+		List<Role> listofRole = userService.getAllRole();
+		model.addAttribute("listRole", listofRole);
+		return "/admin/pages-register";
+	}
+	
+	@PostMapping("/registerSave")
+	public String registersave(@ModelAttribute User user, Model model,RedirectAttributes attribute) {	
+		User regObj = user;
+		regObj.setSiteId(1);
+		
+		userService.saveUser(regObj);
+		attribute.addFlashAttribute("message", "User registered successfull");
+		attribute.addFlashAttribute("alertMessage", "User registered successfully");
+		return "redirect:/register";
+	}
+	
+	@GetMapping({"/", "/login"})
 	public String login(@ModelAttribute User user) {
-		return "login";
+		return "/admin/login";
 	}
 	@PostMapping("/login")
 	public String loginRes(@ModelAttribute User user,HttpServletRequest req,RedirectAttributes attribute,Model model) {
@@ -33,7 +53,7 @@ public class UserController {
 		userdata= reguser.get(0);
 		req.getSession().setAttribute("user", userdata);
 		model.addAttribute("user", userdata);
-		return "redirect:/";
+		return "redirect:/dashboard";
 		}else {
 			attribute.addFlashAttribute("message", "userName and password invalid");
 			return "redirect:/login";

@@ -14,7 +14,7 @@ public class User {
 	private String password;
 	private int roleId;
 	private int siteId;
-	
+	private String name;
 	public int getId() {
 		return id;
 	}
@@ -45,5 +45,11 @@ public class User {
 	public void setSiteId(int siteId) {
 		this.siteId = siteId;
 	}
-	
+	public String getName() {
+		return name;
+	}
+	public void setName(String name) {
+		this.name = name;
+	}
+
 }

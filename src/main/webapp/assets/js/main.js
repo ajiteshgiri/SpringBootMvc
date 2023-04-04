@@ -319,3 +319,15 @@
   }
 
 })();
+
+//we are writing custom js by ajitesh
+
+  $(document).ready(function(){
+	  var msg = $("#alertMessage").text();
+	  if(msg == ''){
+		  
+	  }else{
+		  swal("success !!", msg, "success");
+	  }
+	
+  });
