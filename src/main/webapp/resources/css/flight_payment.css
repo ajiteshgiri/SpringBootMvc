@@ -1,0 +1,276 @@
+.RVM_P_mainsct { 
+    width:100%; 
+    float:left; 
+    border-top:1px solid gainsboro; 
+    padding-top:15px; 
+}
+#RVM_P_wrapper {
+    margin-top: 45px;
+    position: static;
+}
+
+.card-body .form-group input {
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    -webkit-box-shadow: inset 0 1px 1px rgb(0 0 0 / 8%);
+    box-shadow: inset 0 1px 1px rgb(0 0 0 / 8%);
+}
+
+.RVM_P_backtoresult {
+    top: -40px;
+    left: 0;
+    position: absolute;
+    margin: 0;
+}
+.RVM_P_backtoresult a {
+    display: flex;
+    align-items: center;
+    color: #f5696c;
+    font-weight: bold
+}
+.RVM_P_backtoresult a i {
+    margin-right: 5px;
+    font-size: 25px
+}
+.RVM_P_hotel_det { 
+    position: relative; 
+    padding-left: 45%; 
+    min-height: 230px; 
+    margin: 0;
+    border: 1px solid #ccc
+}
+.RVM_P_hotel_det .media-body { padding: 10px 10px 5px 0 }
+.RVM_P_hotel_det p {
+    margin-bottom: 8px
+}
+.RVM_P_hotel_det .media-left {
+    width: 45%; 
+    float: left; 
+    position: absolute; 
+    left: 0; 
+    top: 0; 
+    height: 100%;
+}
+.RVM_P_hotel_det .media-body .RVM_P_heading { 
+    margin-top: 0; font-size: 30px;
+    margin-bottom: 5px; 
+}
+.RVM_P_hotel_det .media-left img { 
+    width: 100%; 
+    height: 100%; 
+}
+.RVM_P_Srating {
+    padding: 0;
+    list-style-type: none;
+}
+.RVM_P_trvl_infoFrm {
+    margin-top: 30px
+}
+.card_title {
+    font-size: 14px;
+    border-bottom: 1px solid #d6d6d6;
+    padding: 10px 15px;
+    box-sizing: border-box;
+    background: #f9f9f9
+}
+.card_title h2 {
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+    margin-top: 6px;
+}
+.card_title h2 i {
+    font-size: 20px;
+    color: #333;
+    margin-right: 15px;
+}
+.card {
+    border: 1px solid #ccc;
+}
+.card-body {
+    width: 100%;
+    float: left;
+    padding: 20px 5px 10px
+}
+.RVM_P_traveler_form {
+    position: relative;
+    padding: 0 15px
+}
+.row { 
+    margin:0; 
+}
+.RVM_P_traveler_block, .RVM_P_Hroomname, .RVM_P_Ttype, .RVM_P_T_fields, .RVM_P_S_price, .P_title {
+    width: 100%;
+    float: left
+}
+.RVM_P_Hroomname {
+    margin-bottom: 15px;
+    font-size: 17px;
+    font-weight: bold;
+}
+.RVM_P_Ttype {
+    font-size: 14px
+}
+.RVM_P_T_fields {
+    margin-left: -5px;
+    margin-right: -5px;
+}
+.RVM_P_T_fields > div, .RVM_P_T_fields > div:last-child > div {
+    padding: 0 5px
+}
+.RVM_P_T_fields > div:last-child {
+    padding: 0
+}
+.RVM_P_mainsct > form > .r-container-custom {
+    position: relative
+}
+.RVM_P_sidebar { 
+    margin-top:45px; 
+    position:absolute; 
+    top:0; 
+    right:0; 
+}
+.RVM_P_S_price {
+    border: 1px solid #ccc;
+    margin-bottom: 20px
+}
+.payment_sidebar .price_details{ padding:0; }
+.payment_sidebar .payment_side_prc{ padding:0; }    
+.P_title {
+    margin-bottom: 15px;
+    background: #f9f9f9;
+    border-bottom: 1px solid #ccc
+}
+.P_title h4 {
+    padding: 16px;
+    margin: 0;
+    font-size: 19px
+}
+.P_title i {
+    margin-right: 10px;
+}
+.RVM_P_S_price ul {
+    list-style-type: none
+}
+.RVM_P_total_prc {
+    margin-top: 10px;
+    background: gainsboro;
+    padding: 10px 15px;
+    margin-bottom: 0
+}
+.RVM_P_pmnt_sctn, .RVM_P_billng_sctn, .RVM_P_cardinfo_sctn, .RVM_P_confirmclck_sctn {
+    width: 100%;
+    float: left;
+    margin-top: 30px
+}
+.RVM_P_mobile_prc_area {
+    width: 100%;
+    list-style-type: none;
+    position: fixed;
+    bottom: 0;
+    z-index: 9;
+    display: none;
+    background: #ff5722;
+    color: #000;
+    padding: 0 15px;
+    margin: 0
+}
+#RVM_P_targetDiv { width: 100%; float: left; }
+.RVM_P_mobile_prc_area .RVM_P_usd {
+    width: 40%;
+    padding: 5px 0;
+    float: left
+}
+.RVM_P_mobile_prc_area .RVM_P_view_detail, .RVM_P_mobile_prc_area .RVM_P_price {
+    width: 30%;
+    padding: 5px 0;
+    float: left
+}
+.RVM_P_mobile_prc_area a {
+    color: white
+}
+.RVM_P_mob_star {
+    color: red;
+    position: absolute;
+    top: 11px;
+    left: 23px;
+}
+.RVM_P_billinfo_form select {
+    padding-left: 6px
+}
+.RVM_P_S_price > ul > li {
+    width: 100%;
+    display: inline-block
+}
+.RVM_P_F_infoFrm_sct, .RVM_P_fdetail_body, .RVM_P_Fdep {
+    width: 100%;
+    float: left
+}
+.RVM_P_Fdep h3 {
+    margin: 0 0 10px 0;
+    font-size: 14px;
+    text-align: center;
+    font-weight: bold
+}
+.RVM_P_Fdep h3 span {
+    display: inline-block;
+    padding: 5px 10px;
+    background: #f9f9f9;
+    margin-top: -1px;
+}
+.RVM_flnumbr > img {
+    height: 35px;
+    position: absolute;
+    left: 15px;
+    top: 0;
+}
+.RVM_dep_info {
+    margin-bottom: 10px
+}
+.RVM_flnumbr > div {
+    padding-left: 40px;
+    font-size: 14px;
+}
+.RVM_D_takeOf_date, .RVM_D_landng_date {
+    /*width: 50%;*/
+    margin-top: 8px;
+    text-align: center;
+    font-size: 14px
+}
+.RVM_P_trptime_class {
+    background: #f6f6f6;
+    float: left;
+    width: 100%;
+    padding: 5px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media(max-width: 991px){
+    .RVM_P_sidebar { position: relative; width: 100%; float: left; padding: 0; }
+    .RVM_P_sidebar .RVM_P_S_price { margin-bottom: 0 }
+}
+@media(max-width: 767px){
+    .RVM_P_mobile_prc_area {
+        display: block;
+            padding: 0 12px;
+    }
+    .RVM_H_footer {
+        margin-bottom: 31px
+    }
+    .RVM_P_confirmclck_sctn { padding-bottom: 40px;}
+}
+@media(max-width: 480px){
+    .RVM_P_T_fields > .col-xs-4 { width:50%; }
+    .RVM_P_T_fields > .col-xs-8 { width:100%; }
+    .RVM_P_sidebar { margin-top: 0 }
+    .RVM_P_hotel_det { padding:0; }
+    .RVM_P_hotel_det .media-left { width: 100%; padding: 0; position: static; }
+    .RVM_P_hotel_det .media-body { padding: 10px 10px 5px 10px }
+    .RVM_P_hotel_det .media-body .RVM_P_heading { font-size: 22px }
+    .RVM_D_takeOf_date, .RVM_D_landng_date {
+        width: 100%;
+    }
+}
+

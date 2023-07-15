@@ -1,0 +1,652 @@
+@font-face {
+    font-family:MyriadPro-Bold;
+    src:url(./fonts/MyriadPro-Bold.otf);
+}
+@font-face {
+    font-family:MyriadPro-Regular;
+    src:url(fonts/MyriadPro-Regular.otf);
+}
+@font-face {
+    font-family:MyriadPro-Semibold;
+    src:url(./fonts/MyriadPro-Semibold.otf);
+}
+@font-face {
+    font-family:Montserrat_Regular;
+    src:url(./fonts/Montserrat_Regular.ttf);
+}
+@font-face {
+    font-family:Muli-Regular;
+    src:url(./fonts/fonts-1/Muli/Muli-Regular.ttf);
+}
+@font-face {
+    font-family:Muli-Light;
+    src:url(./fonts/fonts-1/Muli/Muli-Light.ttf);
+}
+@font-face {
+    font-family:Muli-Bold;
+    src:url(./fonts/fonts-1/Muli/Muli-Bold.ttf);
+}
+@font-face {
+    font-family:Muli-Black;
+    src:url(./fonts/fonts-1/Muli/Muli-Black.ttf);
+}
+body {
+    font-size:15px;
+    margin:0;
+    padding:0;
+}
+.pd-0 {
+    padding: 0
+}
+.pdl-0 {
+    padding-left: 0
+}
+.pdr-0 {
+    padding-right: 0
+}
+a {
+    text-decoration: none !important
+}
+.RVM_container {
+    max-width: 1330px;
+    margin: auto;
+}
+.RVM_siteBTN {
+    position: relative;
+    color: #fff;
+    font-size: 16px;
+    border: 0 !important;
+    line-height: normal !important;
+    font-family: Muli-Black;
+    display: inline-block;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    text-shadow: -1px 2px 2px rgba(0, 0, 0, 0.3);
+    background: transparent
+}
+.RVM_siteBTN > span:first-child {
+    /*position: relative;
+    z-index: 2;
+    padding: 8px 15px;
+    display: inline-block;
+    background: #f5696c;
+    border-radius: 30px;*/
+}
+
+.RVM_siteBTN{
+        color: #f5696c;
+    font-family: 'Exo 2', sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border: 3px solid #f5696c;
+    padding: 5px 9px;
+    border-radius: 14px 0;
+    position: relative;
+    z-index: 1;
+    transition: all 0.3s ease 0.1s;
+    display: inline-block;
+    margin-top: 15px;
+    background: #fff;
+}
+.RVM_siteBTN:hover{
+    color: #fff;
+    background-color: #f5696c;
+    border-radius: 0;
+}
+.RVM_siteBTN:before,
+.RVM_siteBTN:after,
+.RVM_siteBTN span:before,
+.RVM_siteBTN span:after{
+    content: "";
+    background-color: #fff;
+    width: 0;
+    height: 5px;
+    position: absolute;
+    top: -5px;
+    right: 0;
+    transition: all 0.3s ease;
+}
+.RVM_siteBTN:after,
+.RVM_siteBTN span:after{
+    width: 5px;
+    height: 0;
+    right: -5px;
+    transition: 0.45s ease;
+}
+.RVM_siteBTN span:before{
+    width: 0;
+    top: auto;
+    bottom: -5px;
+    right: auto;
+    left: 0;
+}
+.RVM_siteBTN span:after{
+    right: auto;
+    left: -5px;
+    bottom: -5px;
+    top: auto;
+}
+.RVM_siteBTN:hover:before,
+.RVM_siteBTN:hover span:before{
+    width: 100%;
+}
+.RVM_siteBTN:hover:after,
+.RVM_siteBTN:hover span:after{
+    height: 125%;
+}
+
+.RVM_siteBTN{
+        color: #f5696c;
+    font-family: 'Exo 2', sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border: 3px solid #f5696c !important;
+    padding: 5px 9px;
+    border-radius: 14px 0;
+    position: relative;
+    z-index: 1;
+    transition: all 0.3s ease 0.1s;
+    display: inline-block;
+    margin-top: 15px;
+    background: #fff;
+}
+.RVM_siteBTN:hover{
+    color: #fff;
+    background-color: #f5696c;
+    border-radius: 0;
+}
+.RVM_siteBTN:before,
+.RVM_siteBTN:after,
+.RVM_siteBTN span:before,
+.RVM_siteBTN span:after{
+    content: "";
+    background-color: #fff;
+    width: 0;
+    height: 5px;
+    position: absolute;
+    top: -5px;
+    right: 0;
+    transition: all 0.3s ease;
+}
+.RVM_siteBTN:after,
+.RVM_siteBTN span:after{
+    width: 5px;
+    height: 0;
+    right: -5px;
+    transition: 0.45s ease;
+}
+.RVM_siteBTN span:before{
+    width: 0;
+    top: auto;
+    bottom: -5px;
+    right: auto;
+    left: 0;
+}
+.RVM_siteBTN span:after{
+    right: auto;
+    left: -5px;
+    bottom: -5px;
+    top: auto;
+}
+.RVM_siteBTN:hover:before,
+.RVM_siteBTN:hover span:before{
+    width: 100%;
+}
+.RVM_siteBTN:hover:after,
+.RVM_siteBTN:hover span:after{
+    height: 125%;
+}
+
+.htl_rslt_btn .as_r_btn{
+       color: #f5696c;
+    font-family: 'Exo 2', sans-serif;
+    font-size: 14px !important;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border: 3px solid #f5696c;
+    padding: 1px 0px !important;
+    border-radius: 14px 0;
+    position: relative;
+    z-index: 1;
+    transition: all 0.3s ease 0.1s;
+    display: inline-block;
+    margin-top: 2px !important;
+    background: #fff;
+}
+.htl_rslt_btn .as_r_btn:hover{
+    color: #fff;
+    background-color: #f5696c;
+    border-radius: 0;
+}
+.htl_rslt_btn .as_r_btn:before,
+.htl_rslt_btn .as_r_btn:after,
+.htl_rslt_btn .as_r_btn span:before,
+.htl_rslt_btn .as_r_btn span:after{
+    content: "";
+    background-color: #fff;
+    width: 0;
+    height: 5px;
+    position: absolute;
+    top: -5px;
+    right: 0;
+    transition: all 0.3s ease;
+}
+.htl_rslt_btn .as_r_btn:after,
+.htl_rslt_btn .as_r_btn span:after{
+    width: 5px;
+    height: 0;
+    right: -5px;
+    transition: 0.45s ease;
+}
+.htl_rslt_btn .as_r_btn span:before{
+    width: 0;
+    top: auto;
+    bottom: -5px;
+    right: auto;
+    left: 0;
+}
+.htl_rslt_btn .as_r_btn span:after{
+    right: auto;
+    left: -5px;
+    bottom: -5px;
+    top: auto;
+}
+.htl_rslt_btn .as_r_btn:hover:before,
+.htl_rslt_btn .as_r_btn:hover span:before{
+    width: 100%;
+}
+.htl_rslt_btn .as_r_btn:hover:after,
+.htl_rslt_btn .as_r_btn:hover span:after{
+    height: 125%;
+}
+
+/*.RVM_siteBTN > span:nth-child(2), .RVM_siteBTN > span:nth-child(3) {
+    position: absolute;
+    top: -1px;
+    width: 80%;
+    height: calc(100% + 2px);
+    border-radius: 30px;
+    transition: all 0.4s ease;
+    -webkit-transition: all 0.4s ease;
+}
+.RVM_siteBTN > span:nth-child(2) {
+    border-left: 3px solid #f5696c;
+    left: -1px;
+}
+.RVM_siteBTN > span:nth-child(3) {
+    border-right: 3px solid #f5696c;
+    right: -1px;
+}
+.RVM_siteBTN:hover {
+    text-shadow: none
+}
+.RVM_siteBTN:hover > span:first-child {
+    background: transparent;
+    color: #f5696c;
+    transition: all 0.4s ease;
+    -webkit-transition: all 0.4s ease;
+}
+.RVM_siteBTN:hover > span:nth-child(2) {
+    border-left-width: 10px !important;
+    transition: all 0.4s ease;
+    -webkit-transition: all 0.4s ease;
+}
+.RVM_siteBTN:hover > span:nth-child(3) {
+    border-right-width: 10px !important;
+    transition: all 0.4s ease;
+    -webkit-transition: all 0.4s ease;
+}*/
+.RVM_siteBTN_W {
+    border-color: white;
+    color: white;
+}
+.RVM_siteBTN_W:before {
+    background: white
+}
+.RVM_siteBTN_W:hover span {
+    color: #0216ff
+}
+.RVM_siteBTN_G {
+    border-color: white;
+    color: white;
+}
+.RVM_siteBTN_G:before {
+    background: white
+}
+.RVM_siteBTN_G:hover span {
+    color: #0216ff
+}
+/*.RVM_title_heading {
+    text-align: center
+}
+.RVM_title_heading .RVM_titl_h {
+    text-shadow: 0px 1px 1px #000000;
+    color: #0216ff;
+    text-transform: uppercase;
+    font-size: 28px;
+    font-weight: 500;
+    margin: 0 0 5px;
+    text-align: center;
+}
+.RVM_title_heading .RVM_titl_h span {
+    color: #000
+}
+.RVM_sapretor_outer {
+    display: flex;
+    justify-content: center;
+    margin: 0 0 20px;
+}
+.RVM_sapretor_outer .RVM_sprt_ttl {
+    width: 60px;
+    float: left;
+    position: relative;
+    margin-top: 4px;
+    text-align: center;
+}
+.RVM_sprt_ttl:before, .RVM_sprt_ttl:after {
+    position: absolute;
+    content: "";
+    width: 20px;
+    height: 2px;
+    background: #cacaca;
+    left: 0;
+    top: 10px;
+}
+.RVM_sprt_ttl:after {
+    right: 0;
+    left: unset;
+}
+.RVM_sprt_ttl .RVM_dot {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background: #cacaca;
+}*/
+.RVM_title_heading {
+    text-align: center;
+}
+.RVM_title_heading .RVM_titl_h {
+    font-weight: normal;
+    margin: 0 0 20px 0;
+    display: inline-block;
+    position: relative;
+    letter-spacing: 1px;
+    padding: 0;
+    font-family: Muli-Bold;
+}
+.RVM_title_heading .RVM_titl_h p {
+    content: '';
+    position: absolute;
+    top: 2px;
+    right: -18px;
+    z-index: 0;
+    width: 36px;
+    height: 36px;
+    border-radius: 0;
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+}
+.RVM_title_heading .RVM_titl_h span {
+    font-family: Muli-Black;
+    position: relative;
+    z-index: 2;
+    padding: 5px 10px;
+    display: inline-block;
+    color: #f5696c;
+    font-size: 28px
+}
+.RVM_title_heading .RVM_titl_h span label {
+    font-weight: normal;
+    margin: 0 3px 0 0;
+    font-size: 60px;
+    color: #f5696c;
+    position: relative
+}
+.RVM_title_heading .RVM_titl_h span label i {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 5px;
+    background: #f5696c;
+}
+.RVM_title_heading .RVM_titl_h span > i {
+    font-style: normal;
+    color: #f5696c;
+}
+.not_focus_input {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 5px 5px 5px 0;
+    margin-bottom: 0;
+    text-align: left;
+    overflow: hidden;
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+}
+.RVM_H_inner_header {
+    width: 100%;
+    float: left;
+}
+.RVM_H_inn_bot {
+    width: 100%;
+    float: left;
+    padding: 10px 15px;
+    background: #fff
+}
+.RVM_H_inn_list {
+    list-style-type: none;
+    width: 100%;
+    float: left;
+    margin-bottom: 0;
+    padding: 0
+}
+.RVM_H_inn_F {
+    float: left;
+    width: auto;
+}
+.RVM_H_inn_F img {
+    height: 45px
+}
+.RVM_H_inn_L {
+    float: right;
+}
+.RVM_H_inn_L a {
+    font-size: 30px;
+    font-family: 'Muli-Black';
+    color: #636363;
+    float: left;
+    margin-top: 2px;
+}
+.RVM_H_inn_L a:hover {
+    color: #cd1814
+}
+.RVM_logo {
+    display: inline-block;
+    position: relative;
+    z-index: 9;
+    font-family: Muli-Black;
+    font-size: 40px;
+    line-height: 40px;
+    color:#565656;
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+}
+.RVM_logo:hover {
+    /*color:#f5696c;*/
+}
+.RVM_logo span {
+    color:#f5696c;
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+}
+.RVM_logo:hover span {
+    color:#f5696c;
+}
+
+/* footer start */
+.RVM_H_footer {
+    width: 100%;
+    float: left;
+    background: #cccccc;
+    padding: 10px 0 0;
+    text-align: center;
+}
+.RVM_H_footer a {
+    color: #f5696c;
+    display: inline-block
+}
+/* footer end */
+
+/* Calendar popup start */
+#ui-datepicker-div {
+    position: fixed !important;
+    height: 100% !important;
+    width: 100% !important;
+    top: 0 !important;
+    left: 0 !important;
+    z-index: 100000 !important;
+    background: transparent;
+    border: 0;
+    padding: 100px 0 0 0;
+    text-align: center;
+    pointer-events: none
+}
+#ui-datepicker-div .ui-datepicker-group-first, #ui-datepicker-div .ui-datepicker-group-last {
+    width: 250px;
+    /*height: 267px;*/
+    background: #f5696c;
+    float: none;
+    display: inline-block;
+    position: relative;
+    z-index: 2;
+    pointer-events: all
+}
+#ui-datepicker-div .ui-datepicker-group-first:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    background: #f5696c
+}
+#ui-datepicker-div > .ui-datepicker-buttonpane {
+    width: 500px;
+    clear: unset;
+    margin: 0;
+    display: inline-block;
+    position: relative;
+    z-index: 2;
+    pointer-events: all
+}
+.ui-datepicker-multi .ui-datepicker-group table thead {
+    color: white
+}
+#ui-datepicker-div:before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background: rgba(0, 0, 0, 0.5);
+    pointer-events: none
+}
+.ui-datepicker .ui-datepicker-header {
+    border: 0;
+    background: #f5696c;
+    border-radius: 0;
+    color: white;
+    padding: 7px 0 !important;
+    z-index: 5
+}
+.ui-datepicker table {
+    background: #f5696c;
+    position: relative;
+    z-index: 5;
+}
+.ui-datepicker table thead {
+    color: white
+}
+.ui-datepicker-prev, .ui-datepicker-next {
+    background: transparent !important;
+    border: 0 !important;
+    top: 7px !important;
+    cursor: pointer;
+}
+.ui-datepicker-multi .ui-datepicker-group table {
+    width: 98% !important
+}
+.ui-state-active, .ui-widget-content .ui-state-active {
+    border-color: #ce1814 !important;
+    background: #ce1814 !important
+}
+.ui-state-default, .ui-widget-content .ui-state-default {
+    text-align: center;
+    padding: .4em .2em
+}
+.ui-datepicker-prev {
+    left: 2px !important
+}
+.ui-datepicker-next {
+    right: 2px !important
+}
+.ui-datepicker-prev span,
+.ui-datepicker-next span {
+  background-image: none !important;
+}
+.ui-datepicker-prev:before,
+.ui-datepicker-next:before {
+  font-family: FontAwesome;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  font-weight: normal;
+  align-items: center;
+  justify-content: center;
+  color: white
+}
+.ui-datepicker-prev:before {
+  content: "\f053";
+}
+.ui-datepicker-next:before {
+  content: "\f054";
+}
+/* Calendar popup end */
+
+@media(max-width: 480px){
+    .RVM_logo {
+        font-size: 30px;
+    }
+    .RVM_H_inn_L a {
+        font-size: 20px;
+        margin-top: 8px;
+    }
+}
+@media(max-width: 400px){
+    
+}
+@media(max-width: 350px){
+    .RVM_H_inn_L a {
+        font-size: 18px;
+        margin-top: 1px
+    }
+    .RVM_H_inn_F img {
+        height: 40px;
+    }
+    .RVM_logo {
+        font-size: 25px;
+        line-height: 25px;
+    }
+}

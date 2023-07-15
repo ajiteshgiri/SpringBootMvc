@@ -1,0 +1,114 @@
+.table-type1{ background-color:#ffffff;	border:none; margin-bottom:0px; }
+.table-type1 > thead > tr > th{
+	background-color:#f1f1f1;
+	text-transform:capitalize;
+	border-width:0px;
+	font-size:13px;
+	line-height: 17px;
+	font-weight:600;
+	vertical-align:middle;
+	color:#000000;
+	padding: 17px 8px;
+}
+.table-type1 > tbody > tr > td{
+	border:1px solid #d0d0d0;
+	border-width:0px 0px 1px 0px;
+	font-size:13px;
+	line-height:28px;
+	vertical-align:middle;
+	color:#000000;
+	padding:15px 8px;
+}
+.booking-details .table-type1 > tbody > tr:last-child > td{ border-width:0px 0px 0px 0px; }
+
+#fixOuter .table-type1{ table-layout:fixed; }
+#fixOuter .fix-head-outer{
+	background-color:#f1f1f1;
+	padding:0px 30px;
+}
+#fixOuter .fixedHead{ overflow:hidden; }
+#fixOuter .fixedHead-data{ margin:0px 30px; overflow:auto; }
+
+.table-type2{ background-color:#ffffff;}
+.table-type2 > thead > tr > th{
+	background-color:#f1f1f1;
+	border:1px solid #cecece;
+	text-transform:capitalize;
+	font-size:13px;
+	line-height: 17px;
+	font-weight:600;
+	vertical-align:middle;
+	color:#000000;
+	padding: 15px 8px;
+}
+.table-type2 > tbody > tr > td{
+	border:1px solid #d0d0d0;
+	font-size:13px;
+	line-height:18px;
+	vertical-align:middle;
+	color:#000000;
+	padding:10px 8px;
+}
+.table.table-type2>thead:first-child>tr:first-child>th{ border-top:1px solid #cecece;}
+.table-type2 img.airline-logo{
+	width:100px;
+	border:1px solid #dfdfdf;
+	margin-bottom:10px;
+}
+
+@media(max-width:768px){
+.no-more-tables768 .table, .no-more-tables768 .table thead, .no-more-tables768 .table tbody, .no-more-tables768 .table th,
+.no-more-tables768 .table td, .no-more-tables768 .table tr{
+	display:block;
+}
+.no-more-tables768 .table tr{
+	display:block;
+}
+.no-more-tables768 .table tbody tr{
+	margin-bottom:10px;
+}
+.no-more-tables768 .table tbody tr:last-child{
+	margin-bottom:0;
+}
+.no-more-tables768 .table thead tr{
+	position: absolute;
+	top: -9999px;
+	left: -9999px;
+}
+.no-more-tables768 .table tr:last-child{
+	border-bottom:0;
+}
+.no-more-tables768 .table tr{
+	border-left: 1px solid #DDD;
+	border-bottom: 1px solid #DDD;
+}
+.no-more-tables768 .table td{
+	position: relative;
+	padding: 10px 5px 10px 46%;
+	white-space: normal;
+	text-align: left;
+	border-left:none;
+	border-bottom:0px;
+}
+.no-more-tables768 .table td:before {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 45%;
+	text-align: left;
+	font-weight: bold;
+	background-color: #f2f2f2;
+	content: attr(data-title);
+	height: 100%;
+	overflow: hidden;
+	padding: 11px 5px;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	border-right:1px solid #ddd;
+}
+
+}
+@media( max-width: 576px){
+	#fixOuter .fix-head-outer{ padding:0px 15px; }
+ 	#fixOuter .fixedHead-data{ margin:0px 15px; }   
+}

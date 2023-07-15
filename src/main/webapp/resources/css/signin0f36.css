@@ -1,0 +1,68 @@
+.signin-outer{ padding-bottom:40px; background-color:#f5f5f5; }
+.forgotpwd-box{
+	margin-top:20px;
+    border:1px solid #b5b5b5;
+    border-radius:3px;
+	padding:10px;
+	position:relative;
+}
+.forgotpwd-box .forgotpwd-close{
+	position: absolute;
+	right: -8px;
+	top: -8px;
+	font-size: 18px;
+	background-color: #ffffff;
+	cursor: pointer;
+}
+.forgotpwd-btn{ display:inline-block; margin-bottom:15px; }
+.forgotpwd-box .mail-btn,
+.forgotpwd-box .mail-btn:hover,
+.forgotpwd-box .mail-btn:focus{
+	border: none;
+    background-color: #f15626;
+    padding:15px;
+    font-size: 14px;
+    color: #ffffff;
+    text-align: center;
+    font-weight: bold;
+    border-radius: 3px;
+    letter-spacing: 0.6px;
+    display: block;
+    text-transform: uppercase;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+.no-touch .forgotpwd-box .mail-btn:hover{
+	background-color: #102339;
+    color: #ffffff;
+}
+.forgotpwd-box .form-type1 .form-group{ position:relative; padding-right:65px; }
+.forgotpwd-box .form-type1 .form-group .mail-btn{
+	position:absolute;
+	top:0px;
+	right:0px;
+}
+.register-box{ padding:70px 40px; }
+.register-box .cms-text1 { width: 80%; margin: 0 auto 30px; }
+.register-outer .custom-chkbox2{margin-bottom: 20px;margin-top: 20px;}
+
+.login-box{ padding: 40px; }
+.login-box .btn-typ3{ min-width: 235px; display: inline-block; margin: auto; }
+
+@media(min-width:992px) and (max-width:1199px){
+	.register-box{ padding:84px 40px; }
+    .register-box .cms-text1 { width: 100%; }
+}
+@media(max-width:992px){
+    .register-box .cms-text1 { width: 100%; }
+}
+@media(max-width:767px){
+	.register-box{ padding:40px 40px 30px; }
+}
+@media(max-width:576px){
+	.save-btn a{ display:block !important; margin-bottom:10px; }
+    .register-box{ padding:20px 20px 10px; }
+}

@@ -29,8 +29,14 @@ public class HomeController {
 	@Autowired
 	UserService userService;
 	
+	@GetMapping("/")
+	public String homepage() {
+		return "index";
+	}
+
+	
 	@GetMapping("/dashboard")
-	public String home(HttpServletRequest req) {
+	public String dashboard(HttpServletRequest req) {
 		if(req.getSession().getAttribute("user") != null) {
 			return "/admin/index";
 		}else {
@@ -39,9 +45,58 @@ public class HomeController {
 		
 	}
 	@GetMapping("/addContent")
-	public String content(@ModelAttribute Content content) {
-		return "/admin/register";
+	public String addBlog(@ModelAttribute Content contentform,HttpServletRequest req) {
+		if(req.getSession().getAttribute("user") != null) {
+			return "/admin/pages-contact";
+		}else {
+			return "redirect:/login";
+		}
 	}
+	@PostMapping("/addContentsave")
+	public String addBlogsave(@ModelAttribute Content contentform,HttpServletRequest req,RedirectAttributes attribute) {
+		if(req.getSession().getAttribute("user") !=null) {
+			service.save(contentform);
+			attribute.addFlashAttribute("saveMessage","blog successfull add");
+			return "redirect:/addContent";
+		}
+		return "redirect:/login";
+	}
+	
+	@GetMapping("/showContent")
+	public String showBlogList(HttpServletRequest req,Model model) {
+		if(req.getSession().getAttribute("user") !=null) {
+			List<Content> getAllContent = service.getAllContent();
+			model.addAttribute("contentLit", getAllContent);
+			return "/admin/showblogList";
+		}
+		return "redirect:/login";
+	}
+	
+	@GetMapping("/editContent/{id}")
+	public String editContent(@ModelAttribute Content content,@PathVariable int id, HttpServletRequest req,Model model) {
+		if(req.getSession().getAttribute("user") !=null) {
+			Optional<Content> reg = service.getbyId(id);
+			model.addAttribute("contentLit", reg.get());
+			return "/admin/editContent";
+		}
+		return "redirect:/login";
+	}
+	
+	@PostMapping("/updateContent")
+	public String updateContent(@ModelAttribute Content contentform, HttpServletRequest req,Model model) {
+		if(req.getSession().getAttribute("user") !=null) {
+		Content updateContent = service.update(contentform);
+		if(updateContent != null) {
+			model.addAttribute("saveMessage", "update content successfully");
+			return "/admin/editContent";
+		}
+		return "redirect:/showContent";
+		}
+		return "redirect:/login";
+	}
+	
+	
+
 
 	@GetMapping("/edit/{id}")
 	public String edit(@ModelAttribute Content content, @PathVariable int id,Model model, RedirectAttributes attributes) {

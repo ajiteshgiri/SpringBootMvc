@@ -41,7 +41,7 @@ public class UserController {
 		return "redirect:/register";
 	}
 	
-	@GetMapping({"/", "/login"})
+	@GetMapping({"/login"})
 	public String login(@ModelAttribute User user) {
 		return "/admin/login";
 	}

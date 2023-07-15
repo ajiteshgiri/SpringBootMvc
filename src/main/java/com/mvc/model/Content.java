@@ -20,7 +20,8 @@ public class Content {
 	private String heading;
 	private String siteId;
 	@Column(name="content", columnDefinition="LONGTEXT")
-	private String content;
+	private String contentdata;
+	private String status;
 	
 	public int getId() {
 		return id;
@@ -58,17 +59,24 @@ public class Content {
 	public void setSiteId(String siteId) {
 		this.siteId = siteId;
 	}
-	public String getContent() {
-		return content;
+
+	public String getContentdata() {
+		return contentdata;
 	}
-	public void setContent(String content) {
-		this.content = content;
+	public void setContentdata(String contentdata) {
+		this.contentdata = contentdata;
 	}
 	public String getHeading() {
 		return heading;
 	}
 	public void setHeading(String heading) {
 		this.heading = heading;
+	}
+	public String getStatus() {
+		return status;
+	}
+	public void setStatus(String status) {
+		this.status = status;
 	}
 	
 }

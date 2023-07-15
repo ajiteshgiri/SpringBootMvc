@@ -1,0 +1,134 @@
+
+/* Final ticket booking css start */
+@font-face {
+    font-family:Muli-Black;
+    src:url(./fonts/fonts-1/Muli/Muli-Black.ttf);
+}
+.mob-star {
+         color: red;
+         position: absolute;
+         top: 15px !important;
+         left: 20px;
+         }
+
+ .travelers-right {
+    float: right; width:86%;
+    
+}
+
+   #travelerdetails{     float: left;
+    width: 100%;
+    /* margin: 10px 8px; */
+    border: 1px solid #d5d5d5;
+    padding: 10px;    }
+
+.travelers-left{ float: left; width: 10%;   }
+  .travelers-block{ float: left;  width: 100%;   }
+
+         .sidebar__payment-total{     background: #d6d6d6;
+         color: #000;
+         padding: 10px 7px !important;   }
+         .totel-price{ font-size: 20px; color: #000;   }
+         .alert-success {  text-align: center;   }
+         ul.sidebar__payment-total{ float: left; width: 100%;     }
+         ul.sidebar__payment-total li.f-primary { float:left;}
+         ul.sidebar__payment-total span{ float:right;}
+         .flight-summary{     float: left;
+         width: 100%;
+         border: 1px solid #d6d6d6;
+         }   
+         .depart .d-title{  font-size: 18px;
+         margin: 0;
+         padding: 0;
+         background: #d5d5d5;
+         color: #333;
+         padding: 4px 28px;
+         margin-bottom: 21px;    }
+
+
+         .traveller-info-2{ float: left; width: 100%; border:1px solid #d5d5d5; margin-top:30px;       }
+         .travel-info-title{ background:#006465; color: #fff; font-size: 19px; font-weight: 600; 
+            padding: 6px 15px;             }
+         .depart  .flight-result-strip-3 {
+         float: left;
+         width: 100%;
+         padding: 15px 0 15px 30px !important; }
+         .depart  .flight-result-strip-3:first-child{ padding-top:0 !important;   }
+         .depart .flight-result-strip-2 { margin: 0;   }
+         .depart{  border-bottom: 1px solid #f6f6f6; float: left ; width: 100%; margin-bottom: 10px;background: #fff;           }
+         .flight-summary .confirm-heading {
+         float: left;
+         width: 100%;
+         padding: 6px 15px;
+         font-size: 19px;
+         font-weight: 600;
+         border-bottom: 1px solid #d5d5d5;
+         background: #006564; color: #fff;  
+         }
+         .return{  border-bottom:1px solid #f6f6f6; float: left ; width: 100%; margin-bottom: 10px;          }
+         .flight-summary .confirm-heading { float: left;
+         width: 100%;
+         padding: 6px 15px;
+         font-weight: 600;
+         border-bottom: 1px solid #d5d5d5;
+         }
+         .flight-summary .confirm-heading i {
+         font-size: 18px;
+         color: #fff;
+         margin-right: 15px;
+         }
+         .RVM_booking-details .avail_loader { border:1px dashed #333; font-size: 16px;padding-top:7px;       }
+         .congrts-title{ color:#333; line-height: 30px; margin-top:20px;   }
+         .green-cong{  color: #78b348; font-size: 35px;}
+.RVM_cnfrm_tkt_sctn { margin-top:30px; }
+.RVM_sctn_frst { width:100%; float:left; background: #f6f6f6; }
+.RVM_cnfrms_detail .brdr-c.last-block {
+    padding: 0;
+}
+.pd-0 { padding:0; }
+.RVM_cnfrms_detail > div { min-height:90px; }
+.RVM_result-header .RVM_nav ul li a{color: #333 !important;}
+.RVM_result-header { background:#fff; }
+.RVM_result-header .RVM_logo { margin-top:10px; float:left; }
+.RVM_result-header .RVM_logo img { height:50px; }
+.RVM_result-header .RVM_nav>ul>li { padding-top:5px; }
+.RVM_result-header .RVM_nav .RVM_mobile { display:block;font-size:25px; font-family: Muli-Black; }
+.RVM_result-header .RVM_nav .RVM_mobile_txt { text-align:right;float:right;font-size: 14px; }
+.RVM_nav { float: right; }
+.RVM_nav > ul { padding: 0; list-style-type: none; }
+.RVM_flight-logo { height: 40px }
+#flightdetailsDiv { width: 100%; float:left; }
+.flight-img .RVM_flight-logo { float: left; margin-right: 10px;  }
+.RVM_flgtrow_det > div { margin-bottom: 15px; }
+.price{ float: left;  width: 100%; border:1px solid #d5d5d5; margin-top:20px;       }
+.price-title{ font-size: 19px; color: #fff; padding: 0 15px; font-weight: 600; padding: 6px 15px; background: #006465;         }
+.price-title  i{ margin-right: 10px; font-weight: bold ; }
+.price ul{ margin:0; padding: 0; ; list-style: none; float: left; width: 100%;  }
+.price ul li{ float:left; width: 100%; padding: 10px; font-size: 16px; color:#000; background: #fff;         }
+.price ul li:nth-child(even){ background:#f6f6f6;   }
+.price ul li a{  color:#333; font-size: 14px;     }
+.price  .text-right{ font-size: 18px; font-weight: bold;    }
+.price  .list-group-traveler { font-weight:bold; color:#000;       }
+.price a.traveler-fees-toggle { float: left; width: 100%; color: #333; font-size: 16px; border-bottom: 1px solid #3233; padding: 4px 0; margin-bottom: 13px; }
+.traveler-fees-slide { width:100%; float:left; }
+
+@media (max-width: 767px){
+.RVM_result-header .RVM_logo img { height:40px; }
+  .RVM_result-header .RVM_nav .RVM_mobile { font-size:20px !important; }
+  .RVM_result-header .RVM_nav .RVM_mobile_txt { font-size:12px; }
+  .theme-copyright { padding-bottom:0 !important; }
+  .RVM_layoverINmob { position:absolute; top:0; right:0; padding: 0; font-size: 11px; }
+}
+@media (max-width: 480px){
+.RVM_result-header .RVM_logo img { height:25px; }
+  .RVM_result-header .RVM_nav>ul>li { padding:0; }
+  .RVM_result-header .RVM_logo { margin-top:7px; }
+  .RVM_result-header .RVM_nav .RVM_mobile { font-size:16px !important; }
+  #bookDivId { margin-top:20px; }
+  .RVM_cnfrm_tkt_sctn { margin-top:0; }
+  .RVM_cnfrms_detail > div { min-height:auto; width:100%; }
+  .RVM_fromto_detrow { padding: 0; }
+  .RVM_fromto_detrow > div { width: 100%; }
+  #travelerdetails .travelers-left, #travelerdetails .travelers-right { width: 100%; float: left; }
+  #travelerdetails .travelers-right > .row > div {  width: 33.33%; }
+}

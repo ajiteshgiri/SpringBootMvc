@@ -12,4 +12,6 @@ public interface ContentService {
 	public Content update(Content content);
 	public void delete( int id);
 	public List<Content> getAllContent();
+	public List<Content> getBlogList(String siteId, String status);
+	public List<Content> getBlogContent(String siteId, String status, String url);
 }

@@ -1,0 +1,560 @@
+.modify-search-outer-box {
+    background-color: rgba(220, 220, 220, 0.3);
+    padding: 20px 0;
+    border-bottom: 1px solid #dcdcdc;
+    font-size: 13px;
+}
+.mobile-modified-search{ display: none; }
+.modify-search-outer-box .modified-search .form-group,
+.mobile-modified-search .form-group { margin-bottom: 0; }
+.modify-search-outer-box .modified-search .form-group .control-label,
+.mobile-modified-search .form-group .control-label { font-weight: 600; color: #123764; font-size: 14px; }
+.mobile-modified-search .form-group .control-label{ margin-bottom: 5px; line-height: 16px; }
+/** Car Search **/
+.modify-search-outer-box .carsearch.modified-search > div.destination{	width:18%; }
+.modify-search-outer-box .carsearch.modified-search > div.destination:first-child{ border-right:0px solid #9a9a9a; }
+.modify-search-outer-box .carsearch.modified-search > div.dates { width:35%; }
+
+/** Hotel Search **/
+.modify-search-outer-box .hotelsearch.modified-search > div.destination{width:30%;}
+.modify-search-outer-box .hotelsearch.modified-search > div.dates{width: 30%;}
+.modify-search-outer-box .hotelsearch.modified-search > div.passengers { width:19%; }
+.modify-search-outer-box .hotelsearch.modified-search > div.class{width:8%;}
+
+.modify-search-outer-box .modified-search > div {border-right: 1px solid #9a9a9a;padding: 3px 12px 7px 18px;float: left;}
+.modify-search-outer-box .modified-search > div.destination {width: 30%;padding-left: 40px;position: relative;}
+.modify-search-outer-box .modified-search > div.destination:before {
+    content: "";
+    background: url("../images/destination-pin.svg") no-repeat;
+    width: 14px;
+    height: 24px;
+    display: inline-block;
+    position: absolute;
+	top: 50%;left: 12px;
+    transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+}
+.modify-search-outer-box .modified-search > div.class { width: 12%; }
+.modify-search-outer-box .modified-search > div.dates { width: 28%; }
+.modify-search-outer-box .modified-search > div.passengers { width: 15%; }
+.modify-search-outer-box .modified-search > div.modify-btn-box { width: 13%; padding: 0; float: right; }
+.modify-search-outer-box .modified-search > div.no-borders { border-right: none; }
+.modify-search-outer-box .modified-search > div.no-borders .modify-search-btn{ margin-top:17px; }
+
+.modify-search-outer-box .modified-search > div.dates div.departure-date,
+.modify-search-outer-box .modified-search > div.dates div.return-date { padding-left: 40px; position: relative; }
+
+.modify-search-outer-box .modified-search > div.dates div.departure-date:before,
+.modify-search-outer-box .modified-search > div.dates div.return-date:before {
+    content: "";
+    background: url("../images/filter-calendar-icon.svg") no-repeat;
+    width: 18px;
+    width: 18px;
+    height: 18px;
+    display: inline-block;
+    position: absolute;
+    top: 50%; left: 8px;
+	transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+}
+
+.modify-search-outer-box .radio-typ2 span { color: #4a4a4a; font-size: 13px; }
+
+
+.modified-form .form-control {
+    border-radius: 0 !important;
+    box-shadow: none !important;
+    font-size: 13px !important;
+    border: 1px solid #dadada !important;
+    height: 40px !important;
+    transition: border 0.2s;
+    padding: 5px 10px !important;
+}
+.direct-flight-chkbox { float: right; }
+.modified-form .search-btn {
+    margin-top: 6px;
+    padding: 7px 0;
+}
+.modified-form .modClose-btn{
+	margin-top: 6px;
+    padding: 7px 0;
+	font-size:12px;
+	font-weight: 600;
+	letter-spacing: 0.3px;
+	text-transform:none;
+}
+.modified-form .form-control:hover,
+.modified-form .form-control:focus {
+    box-shadow: none !important;
+    background-color: #FFFFFF !important;
+    border-color: #b1b1b1 !important;
+    transition: border 0.2s;
+}
+
+.modified-form .btn-group.calender {
+    width: 100%;
+    position: relative;
+}
+.modified-form .btn-group .dropdown-toggle{
+	height: 34px;
+	/* line-height: 48px; */
+	padding: 5px 30px 5px 10px;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	width: 100%;
+	text-align: left;
+	border-radius: 2px;
+	border: 1px solid #dadada;
+	color:#616161;
+	box-shadow: none;
+	font-size: 13px;
+	background-color: #FFFFFF;
+	overflow: hidden;
+	position: relative;
+	transition: border 0.2s;
+}
+.modified-form .btn-group .dropdown-toggle:hover,
+.modified-form .btn-group .dropdown-toggle:focus{
+    background: #FFFFFF;
+    border-color: #b1b1b1;
+    transition: border 0.2s;
+}
+.modified-form .btn-group.calender .dropdown-toggle:after{
+	content: '';
+	position: absolute;
+	background: url(../images/calendar-icon-2.svg) no-repeat;
+	width: 22px;
+	height: 22px;
+	top: 50%;
+	right: 5px;
+	margin-top: -12px;
+	border-top: 0.3em solid transparent;
+}
+
+/*.modified-form .btn-group.calender.open .dropdown-toggle{
+	background-color: #f4f5f9;
+}*/
+.modified-form .calender .dropdown-menu{
+	border-radius: 0;
+	border: none;
+	width: 600px;
+	padding: 20px;
+	margin-top: 10px;
+}
+.modified-form .calender .dropdown-menu:before{
+	top: -8px;
+    content: "";
+    border-bottom: 8px solid #ffffff;
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    position: absolute;
+    margin-left: -8px;
+}
+.modified-form .calender-datepicker .dropdown-menu .calendar-loader { display:none; }
+.modified-form .calender-datepicker .dropdown-menu .calendar-loader:before {
+	content:'';
+	background-color:rgba(255,255,255,0.7);
+	position:absolute;
+	top:0; bottom:0; right:0; left:0;
+	}
+.modified-form .calender-datepicker .dropdown-menu .calendar-loader:after {
+	content:'';
+	background:url(../images/loader-2.svg) no-repeat center center;
+	background-size:100%;
+	width:50px; height:50px;
+	position:absolute;
+	top:50%; left:50%;
+	transform:translate(-50%,-50%);
+	}
+
+.modified-form .btn-group.calender.return .dropdown-menu{ left: auto; right: 0px; }
+.modified-form .btn-group.calender.return .dropdown-menu:before{ right: 20px; }
+
+.modified-form .calender .dropdown-menu .month{ position: relative; }
+.modified-form .calender .dropdown-menu .departure-calender1,
+.modified-form .calender .dropdown-menu .return-calender1{ margin-right: 10px; }
+.modified-form .calender .dropdown-menu .departure-calender1,
+.modified-form .calender .dropdown-menu .departure-calender2,
+.modified-form .calender .dropdown-menu .return-calender1,
+.modified-form .calender .dropdown-menu .return-calender2{
+	display: inline-block;
+	float: left;
+	width: 49%;
+	height: 100%;
+}
+
+.modified-form .calender .dropdown-menu .fc-header-title h2{
+	font-size: 12px;
+	line-height: 14px;
+	color: #000000;
+	font-weight: 600;
+	text-transform: uppercase;
+	opacity: 0.6;
+	padding-bottom: 20px;
+}
+.modified-form .calender .dropdown-menu .fc-button-prev,
+.modified-form .calender .dropdown-menu .fc-button-next{
+	border: 0px none;
+    box-shadow: 0 0 0;
+	height: 17px;
+    width: 10px;
+    padding: 0px;
+    border-radius: 0px;
+    position: absolute;
+}
+.modified-form .calender .dropdown-menu .fc-button-prev{ background: url(../images/arrow-left-grey-small-2.svg) no-repeat; left: 0px; }
+.modified-form .calender .dropdown-menu .fc-button-next{ background: url(../images/arrow-right-grey-small-2.svg) no-repeat; right: 0px; }
+.modified-form .calender .dropdown-menu .fc-button-prev .fc-text-arrow,
+.modified-form .calender .dropdown-menu .fc-button-next .fc-text-arrow{ display: none; }
+.modified-form .calender .dropdown-menu .fc-button-prev.fc-state-disabled {
+    cursor: not-allowed;
+}
+
+.modified-form .calender .dropdown-menu .fc-border-separate{ table-layout: fixed; }
+.modified-form .calender .dropdown-menu .fc-border-separate thead .fc-day-header{
+    font-size: 12px;
+    line-height: 14px;
+    color: #000000;
+    font-weight: 600;
+    text-transform: uppercase;
+    border: 0px;
+    padding: 0px 0px 10px;
+}
+.modified-form .calender .dropdown-menu .fc-border-separate tbody .fc-day{
+	border: 1px solid #ffffff;
+	background-color: #102339;
+	padding: 6px 4px;
+	min-width: 20px !important;
+	text-align: center !important;
+	cursor: pointer;
+}
+.modified-form .calender .dropdown-menu .fc-border-separate tbody .fc-day .fc-day-number{
+	font-size: 12px;
+	line-height: 16px;
+	letter-spacing: 0.9px;
+	color: #ffffff;
+	font-weight: 600;
+	display: block;
+	width: 100%;
+}
+.modified-form .calender .dropdown-menu .fc-border-separate tbody .fc-day .fc-day-content{ display: none; }
+.modified-form .calender .dropdown-menu .fc-border-separate tbody .fc-day.fc-past.selected,
+.modified-form .calender .dropdown-menu .fc-border-separate tbody .fc-day.fc-past,
+.modified-form .calender .dropdown-menu .fc-border-separate tbody .fc-day.fc-past:hover,
+.modified-form .calender .dropdown-menu .fc-border-separate tbody .fc-day.fc-past.fc-state-highlight,
+.modified-form .calender .dropdown-menu .fc-border-separate tbody .fc-day.fc-past.selected,
+.modified-form .calender .dropdown-menu .fc-border-separate tbody .fc-day.fc-past:hover{
+	background-color: #e1e1e1;
+	cursor: default;
+	pointer-events:none;
+}
+.modified-form .calender .dropdown-menu .fc-border-separate tbody .fc-day.fc-past .fc-day-number{
+	color: #4a4a4a; opacity: 0.7;
+}
+.modified-form .calender .dropdown-menu .fc-border-separate tbody .fc-day.fc-other-month.fc-future.selected,
+.modified-form .calender .dropdown-menu .fc-border-separate tbody .fc-day.fc-other-month.fc-future{
+	background-color: rgba(18, 55, 100, 0.8);
+	opacity: 0.5;
+	cursor: default;
+	pointer-events:none;
+}
+.modified-form .calender .dropdown-menu .fc-border-separate tbody .fc-day.fc-other-month.fc-future .fc-day-number,
+.modified-form .calender .dropdown-menu .fc-border-separate tbody .fc-day.fc-other-month.fc-past .fc-day-number,
+.modified-form .calender .dropdown-menu .fc-border-separate tbody .fc-day.fc-other-month .fc-day-number,
+.modified-form .calender .dropdown-menu .fc-border-separate tbody .fc-day.fc-other-month .fc-day-number{
+	display: none;
+}
+.modified-form .calender .dropdown-menu .fc-border-separate tbody .fc-day.fc-state-highlight,
+.modified-form .calender .dropdown-menu .fc-border-separate tbody .fc-day.selected,
+.modified-form .calender .dropdown-menu .fc-border-separate tbody .fc-day:hover{background-color: #f15626;}
+
+.modified-form .calender .dropdown-menu .information-section{ padding: 15px 0px 0px; }
+.modified-form .calender .dropdown-menu .information-section .info-box{
+	display: inline-block;
+	width: 49%;
+	float: left;
+	vertical-align: middle;
+	height: 30px;
+	font-size: 12px;
+	line-height: 30px;
+	letter-spacing: 0.1px;
+	color: rgba(74, 74, 74, 0.70);
+}
+.modified-form .calender .dropdown-menu .information-section .info-box:first-child{ margin-right: 10px; }
+.modified-form .calender .dropdown-menu .information-section .info-holiday,
+.modified-form .calender .dropdown-menu .information-section .info-selected{
+	display: inline-block;
+	width: 30px;
+	height: 30px;
+	margin-right: 10px;
+	vertical-align: middle;
+}
+.modified-form .calender .dropdown-menu .information-section .info-holiday{ background-color: #e1e1e1; }
+.modified-form .calender .dropdown-menu .information-section .info-selected{background-color: #f15626;}
+
+
+/* Common Middelbar Search-Control Traveller Count Dropdown CSS */
+.modified-form .btn-group.travel-count{
+	width: 100%;
+}
+.modified-form .btn-group.travel-count .dropdown-toggle{
+	height: 34px;
+	padding: 5px 30px 5px 10px;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	width: 100%;
+	text-align: left;
+	border-radius: 2px;
+	border: 1px solid #dadada;
+	box-shadow: none;
+	font-size: 13px;
+	color: #616161;
+	background: url(../images/select-arrow-down-2.svg) no-repeat right center;
+	background-color: #FFFFFF;
+	overflow: hidden;
+	background-position: top 48% right 8px;
+}
+.modified-form .btn-group.travel-count.open .dropdown-toggle{
+	background-color: #FFFFFF;
+	border-color: #b1b1b1;
+}
+.modified-form .travel-count .dropdown-menu{
+	border-radius: 0;
+	border: none;
+	width: 280px;
+	padding: 10px 5px 10px 10px;
+	left: 0;
+	margin-top: 10px;
+}
+.modified-form .travel-count .dropdown-menu:before{
+	top: -8px;
+    content: "";
+    border-bottom: 8px solid #ffffff;
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    position: absolute;
+    left: 50%;
+    margin-left: -8px;
+}
+.modified-form .travel-count .form-control.small-input{
+	min-width: 65px;
+	border: 1px solid #e5e5e5;
+	border-radius: 0px;
+	box-shadow: none;
+	margin-bottom: 5px;
+	    -webkit-appearance: auto;
+    -ms-appearance: auto;
+    -moz-appearance: auto;
+}
+.modified-form .btn-group.travel-count .dropdown-toggle:after {display: none;}
+.modified-form .select-rooms .room-title{
+	font-size: 12px;
+	font-weight: 600;
+	color: #707070;
+	letter-spacing: 1px;
+	margin-bottom: 10px;
+	text-transform: uppercase;
+}
+.modified-form .select-rooms .form-group{
+    margin-bottom: 0;
+}
+.modified-form .select-rooms label{
+	margin-bottom: 0;
+	vertical-align: middle;
+	color:  #000000;
+	margin-right: 0;
+	letter-spacing: normal;
+	text-transform: uppercase;
+	font-size: 11px;
+	margin-bottom: 2px;
+	font-weight: 600;
+}
+.modified-form .select-rooms label span{
+	display: block;
+	font-weight: normal;
+	color: #707070;
+}
+.modified-form .select-rooms .select-childs-age{
+	margin-top: 10px;
+}
+.modified-form .select-rooms .select-childs-age label{
+	margin-bottom: 7px;
+}
+.select-rooms .select-childs-age > .row > .col-sm-3 { margin-bottom:7px; }
+.modified-form .remove-link{
+	margin: 5px 0px;
+}
+.modified-form .travel-count .select-rooms{
+	padding-top: 15px;
+	padding-bottom: 0px;
+	border-top: 1px solid #e5e5e5;
+	margin-right: 15px;
+}
+.modified-form .travel-count .select-rooms:first-child{
+	border-top: none;
+	padding-top: 0;
+}
+.modified-form .travel-count .travellers-apply{
+	border-top: 1px solid #e5e5e5;
+	padding-top: 15px;
+	margin-right: 15px;
+}
+.modified-form .travel-count .flight-airclass{margin-top: 10px;}
+.modified-form .travel-count .flight-airclass .form-control.small-input{ width:100%; }
+
+.modified-form .add-flight-lnk { margin-top: 38px; }
+
+/*===============*/
+.rooms-select .select-travellers {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    display: block;
+}
+.rooms-select .select-travellers .row {
+	width: 100%;
+    margin: 0;
+}
+.rooms-select .select-travellers .col-xs-4 {
+    padding: 0 5px;
+    box-sizing: border-box;
+}
+.rooms-select .select-travellers .form-group label {
+	    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 13px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    flex-direction: column;
+}
+.select-travellers .form-group {
+    margin-bottom: 0;
+}
+.travellers-apply .row {
+    justify-content: center;
+}
+.rooms-select .select-travellers .form-group label span {}
+
+
+@media(max-width: 1199px){
+    .modify-search-outer-box { padding: 15px 0; }
+    .modify-search-outer-box .modified-search { display: flex; }
+    .modify-search-outer-box .modified-search > div.destination { width: 25%; padding-left: 30px; }
+    .modify-search-outer-box .modified-search > div.destination:before { left: 7px; }
+    .modify-search-outer-box .modified-search .form-group .control-label { line-height: 1.2; margin-bottom: 5px; }
+    .modify-search-outer-box .modified-search > div.dates { width: 32%; }
+    .modify-search-outer-box .modified-search > div.passengers { width: 18%; }
+    .modify-search-outer-box .hotelsearch.modified-search > div.destination{width:25%;}
+    .modify-search-outer-box .hotelsearch.modified-search > div.dates{width: 35%;}
+	
+	/***** Multicity Dropdown CSS *****/
+	.modified-form .multipleFlightForm .calender .dropdown-menu { left:auto; right:0; }
+	.modified-form .multipleFlightForm .calender .dropdown-menu:before { right:10px; left:auto; }
+}
+@media (min-width:992px) and (max-width:1199px){
+	.modified-form .returnForm .btn-group.calender.return .dropdown-menu { right:auto; left:0; }
+	.modified-form .returnForm .btn-group.calender.return .dropdown-menu:before { right:auto; left:20px; }
+}
+
+@media(min-width:992px){
+	.searchbox.modified-form .closeSearchBTN { display:none; }
+}
+
+@media(max-width:991px){
+    .modify-search-outer-box { padding: 15px 0; }
+    .modify-search-outer-box .modified-search { display: block; }
+    .modify-search-outer-box .modified-search > div { margin-bottom: 10px; }
+	.modify-search-outer-box .modified-search > div { padding: 3px 12px 0px 12px; }
+    .modify-search-outer-box .modified-search > div.destination { width: 50%; padding-left: 30px; }
+    .modify-search-outer-box .modified-search > div.destination:before { left: 7px; }
+    .modify-search-outer-box .modified-search .form-group .control-label { line-height: 1.2; margin-bottom: 5px; }
+    .modify-search-outer-box .modified-search > div.class { width: 26%; border-right: 0; }
+    .modify-search-outer-box .modified-search > div.dates { width: 50%; padding: 3px 0; margin-bottom: 0; min-height: 50px; }
+    .modify-search-outer-box .modified-search > div.dates div.departure-date,
+    .modify-search-outer-box .modified-search > div.dates div.return-date { padding-left: 30px; }
+    .modify-search-outer-box .modified-search > div.dates div.departure-date:before,
+    .modify-search-outer-box .modified-search > div.dates div.return-date:before { left: 5px; }
+    .modify-search-outer-box .modified-search > div.passengers { width: 30%; margin-bottom: 0; min-height: 50px; }
+    .modify-search-outer-box .modified-search > div.modify-btn-box { width: 20%; margin-bottom: 0; min-height: 50px; }
+    .modify-search-outer-box .hotelsearch.modified-search > div.destination{width:50%;}
+    .modify-search-outer-box .hotelsearch.modified-search > div.dates{width:50%;padding-left: 10px;}
+    .modify-search-outer-box .hotelsearch.modified-search > div.class {
+	    width: 50%;
+	    border-right: 1px solid #9a9a9a;
+	}
+
+    .modify-search-outer-box .blank-label { display: none; }
+
+    .modified-form .add-flight-lnk { margin-top: 0; }
+
+	/** Car Search **/
+	.modify-search-outer-box .carsearch.modified-search > div.destination{ width:50%; }
+	.modify-search-outer-box .carsearch.modified-search > div.destination:first-child{ border-right:1px solid #9a9a9a; }
+	.modify-search-outer-box .carsearch.modified-search > div.destination{ border-right:0px solid #9a9a9a; }
+	.modify-search-outer-box .carsearch.modified-search > div.dates { width:50%; }
+	.modify-search-outer-box .carsearch.modified-search > div.passengers { width:28%; }
+
+	/** Hotel Search **/
+	.modify-search-outer-box .hotelsearch.modified-search > div.passengers { width:30%;padding-left: 17px; }
+	.modify-search-outer-box .hotelsearch.modified-search > div.dates { border-right:0px solid #9a9a9a; margin-bottom: 10px; }
+}
+
+@media(max-width:768px){
+    .modify-search-outer-box { padding: 10px 0; }
+    .modify-search-outer-box .modified-search { display: flex; flex-wrap: wrap; }
+    .modify-search-outer-box .modified-search > div { margin-bottom: 10px !important; min-height: 50px; border-right: none; padding: 3px 10px !important; width:48% !important; }
+    .modify-search-outer-box .modified-search > div.destination:before { display: none; }
+    .modify-search-outer-box .modified-search .form-group .control-label { line-height: 1.2; margin-bottom: 5px; }
+    .modify-search-outer-box .modified-search > div.class { display: none; }
+    .modify-search-outer-box .hotelsearch.modified-search > div.class{
+		display: block;
+		border-right: 0;
+		width: 10% !important;
+    }
+    .modify-search-outer-box .hotelsearch.modified-search > div.modify-btn-box{width:30% !important;}
+    .modify-search-outer-box .hotelsearch.modified-search > div.passengers{width:38% !important;}
+    .modify-search-outer-box .modified-search > div.dates div.departure-date,
+    .modify-search-outer-box .modified-search > div.dates div.return-date { padding-left: 0; }
+    .modify-search-outer-box .modified-search > div.dates div.departure-date:before,
+    .modify-search-outer-box .modified-search > div.dates div.return-date:before { display: none; }
+    .modify-search-outer-box .modified-search > div.modify-btn-box { float: left; text-align: left; }
+
+    .flight-searchbox .direct-flight-chkbox { float: none; }
+    .flight-searchbox .radio-typ2 { margin-bottom: 10px; }
+
+	/** Car Search **/
+	.modify-search-outer-box .carsearch.modified-search > div.destination{	width:24% !important; }
+	.modify-search-outer-box .carsearch.modified-search > div.destination:first-child,
+	.modify-search-outer-box .carsearch.modified-search > div.destination{ border-right:0px solid #9a9a9a; }
+	.btn-typ1, .btn-typ1:focus{ margin-top:8px; }
+
+}
+
+@media(max-width:576px){
+    .modify-search-outer-box .modified-search > div.destination,
+    .modify-search-outer-box .modified-search > div.dates { width: 100% !important; border-bottom:1px solid #dddddd; margin-bottom:5px !important; }
+
+	/** Car Search **/
+	.modify-search-outer-box .carsearch.modified-search > div.destination{	width:49% !important; }
+
+	/** Hotel Search **/
+	.modify-search-outer-box .hotelsearch.modified-search > div.class{width:49% !important;margin-bottom: 0px !important;}
+	.modify-search-outer-box .hotelsearch.modified-search > div.passengers{width:50% !important;margin-bottom: 0px !important;}
+	.modify-search-outer-box .hotelsearch.modified-search > div.modify-btn-box {width: auto !important;}
+
+	/**flight Modifiy search **/
+	.modify-search-outer-box .modified-search { display: none; }
+	.mobile-modified-search{ display: block; }
+	.mobile-modified-search .btn-typ1, .mobile-modified-search .btn-typ1:focus { padding: 4px 0px; display: block; font-size: 11px; }
+	.modify-search-outer-box { padding: 5px 0;}
+}
+@media( max-width: 480px){
+	.mobile-modified-search .form-group .control-label{ font-size: 12px; }
+	.mobile-modified-search .form-group .text-label{ font-size: 12px; }
+}
+/*@media( max-width: 370px){
+	.modify-search-outer-box .mobile-modified-search > .row > .col-xs-4 { width:50%; }
+	.modify-search-outer-box .mobile-modified-search > .row > .col-xs-4:last-child { width:50%; margin:0 auto; float:none; clear:both; padding-top:10px; }
+	.modify-search-outer-box .mobile-modified-search > .row > .col-xs-4:last-child .modify-search-btn { margin-top:0; }
+}*/

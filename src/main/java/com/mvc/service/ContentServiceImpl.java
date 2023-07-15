@@ -17,6 +17,7 @@ public class ContentServiceImpl implements ContentService {
 	
 	@Override
 	public void save(Content content) {
+		content.setSiteId("1");
 		repo.save(content);
 	}
 
@@ -39,9 +40,10 @@ public class ContentServiceImpl implements ContentService {
 			content.setKeywords(content.getKeywords());
 			content.setHeading(content.getHeading());
 			content.setDescription(content.getDescription());
-			content.setSiteId(content.getSiteId());
+			content.setStatus(content.getStatus());
+			content.setSiteId("1");
 			content.setBlogUrl(content.getBlogUrl());
-			content.setContent(content.getContent());
+			content.setContentdata(content.getContentdata());
 			repo.save(content);
 		}
 		return null;
@@ -56,6 +58,18 @@ public class ContentServiceImpl implements ContentService {
 	@Override
 	public List<Content> getAllContent() {
 		return repo.findAll();
+	}
+
+	@Override
+	public List<Content> getBlogList(String siteId, String status) {
+		List<Content> contentList = repo.findBySiteIdAndStatus(siteId, status);
+		return contentList;
+	}
+
+	@Override
+	public List<Content> getBlogContent(String siteId, String status, String url) {
+		List<Content> contentList = repo.findBySiteIdAndStatusAndBlogUrl(siteId, status,url);
+		return contentList;
 	}
 
 }
