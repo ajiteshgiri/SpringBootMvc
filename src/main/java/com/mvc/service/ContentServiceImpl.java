@@ -45,6 +45,8 @@ public class ContentServiceImpl implements ContentService {
 			content.setBlogUrl(content.getBlogUrl());
 			content.setContentdata(content.getContentdata());
 			repo.save(content);
+			
+			return content;
 		}
 		return null;
 	}
@@ -70,6 +72,16 @@ public class ContentServiceImpl implements ContentService {
 	public List<Content> getBlogContent(String siteId, String status, String url) {
 		List<Content> contentList = repo.findBySiteIdAndStatusAndBlogUrl(siteId, status,url);
 		return contentList;
+	}
+
+	@Override
+	public String checkStatus(int id) {
+		Optional<Content> regOpt = repo.findById(id);
+		if(regOpt.isPresent()) {
+			return regOpt.get().getStatus();	
+		}else {
+			return null;
+		}
 	}
 
 }

@@ -30,7 +30,7 @@
 
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
-
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <!-- =======================================================
   * Template Name: NiceAdmin
   * Updated: Mar 09 2023 with Bootstrap v5.2.3
@@ -91,9 +91,15 @@
                     <th scope="row">${loop.index+1}</th>
                     <td>${data.blogUrl}</td>
                     <td>${data.heading}</td>
-                    <td>${data.status}</td>
-                    <td><a href="/editContent/${data.id}">Edit</a></td>
                     
+                    <td>
+                    <div class="form-check form-switch"><input class="form-check-input statusId" value="${data.id}"  type="checkbox" role="switch" id="status" 
+                    <c:if test="${data.status eq 'Active'}">
+                    checked
+                    </c:if>
+                    ></div> 
+                    </td>
+                    <td><span class="edit_logo"><a href="/editContent/${data.id}"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></a></span></td>
                   </tr>
                 </c:forEach>
                 </tbody>
@@ -124,9 +130,36 @@
   <script src="assets/vendor/simple-datatables/simple-datatables.js"></script>
   <script src="assets/vendor/tinymce/tinymce.min.js"></script>
   <script src="assets/vendor/php-email-form/validate.js"></script>
-
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<script type="text/javascript">
+var statusid;
+$(document).on('click', '.statusId', function() {
+	  var value = $(this).val();
+	  console.log(value);
+	  statusid=value;
+	  var requestOptions = {
+			  method: 'GET',
+			  redirect: 'follow'
+			};
+
+			fetch("http://localhost:8081/api/action/"+value, requestOptions)
+			  .then(response => response.text())
+			  .then(result => {
+				    console.log(result);
+				    var res=result;
+				    swal({
+				    	  title: "Good job!",
+				    	  text: "You status has been "+res,
+				    	  icon: "success",
+				    	});
+			  })
+			  .catch(error => console.log('error', error));
+	});
+	
+</script>
 
 </body>
 

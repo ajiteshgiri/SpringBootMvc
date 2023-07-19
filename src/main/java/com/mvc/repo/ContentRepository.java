@@ -11,5 +11,6 @@ public interface ContentRepository extends JpaRepository<Content, Integer>{
 	
 	List<Content> findBySiteIdAndStatus(String siteId, String status);
 	List<Content> findBySiteIdAndStatusAndBlogUrl(String siteId, String status, String blogUrl);
+	
 
 }

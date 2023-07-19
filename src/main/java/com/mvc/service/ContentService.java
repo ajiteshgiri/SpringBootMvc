@@ -14,4 +14,5 @@ public interface ContentService {
 	public List<Content> getAllContent();
 	public List<Content> getBlogList(String siteId, String status);
 	public List<Content> getBlogContent(String siteId, String status, String url);
+	public String checkStatus(int id);
 }
