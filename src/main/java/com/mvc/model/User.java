@@ -15,6 +15,7 @@ public class User {
 	private int roleId;
 	private int siteId;
 	private String name;
+	
 	public int getId() {
 		return id;
 	}

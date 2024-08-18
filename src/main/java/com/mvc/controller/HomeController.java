@@ -30,7 +30,9 @@ public class HomeController {
 	UserService userService;
 	
 	@GetMapping("/")
-	public String homepage() {
+	public String homepage(Model model,HttpServletRequest req) {
+		model.addAttribute("ajitesh", "you are java developer");
+		req.getSession().setAttribute("ravikant", "php developer");
 		return "index";
 	}
 

@@ -18,7 +18,7 @@
 <meta id="viewport" name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, width=device-width" />
 <meta name="google-site-verification" content="e3jCv1LbRONQr4jQIoNj1gugSXLdx9Hvdcgke6mAa0I" />
 
-<title>ankit ca home page</title>
+<title>ajitesh ca home page</title>
 <meta name="description" content="" />
 <meta name="keywords" content=""/>
 <link rel="canonical" href="#"/>

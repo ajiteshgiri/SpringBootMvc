@@ -10,6 +10,8 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.mvc.model.Content;
+import com.mvc.model.Country;
+import com.mvc.repo.CountryRepository;
 import com.mvc.service.ContentService;
 
 @RestController
@@ -18,6 +20,9 @@ public class ApiController {
 	
 	@Autowired
 	ContentService contentService;
+	
+	@Autowired
+	CountryRepository countryRepository;
 	
 	@GetMapping("/action/{id}")
 	public String actionStatus(@PathVariable int id) {
@@ -42,6 +47,11 @@ public class ApiController {
 	public List<Content> AllContent(){
 		List<Content> getListOfContent= contentService.getAllContent();
 		return getListOfContent;
+	}
+	
+	@GetMapping("/getAllCountry")
+	public List<Country> getcountrylist(){
+		return countryRepository.findAll();
 	}
 
 }

@@ -147,7 +147,8 @@
 
   <!-- Template Main JS File -->
   <script src="/assets/js/main.js"></script>
-  <script src="https://cdn.ckeditor.com/4.20.2/standard/ckeditor.js"></script>
+  
+    <script src="https://cdn.ckeditor.com/4.20.2/standard/ckeditor.js"></script>
 
 </body>
 <script>

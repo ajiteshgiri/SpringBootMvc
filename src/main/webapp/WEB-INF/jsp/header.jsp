@@ -36,7 +36,7 @@
                             
                                     <li class="nav-item mx-lg-2"><a class="nav-link " href="/blog">Blog</a></li>
                                     <li class="nav-item mx-lg-2"><a class="nav-link " href="/contact-us">Contact</a></li>
-                                  
+                                  <li class="nav-item mx-lg-2"><a class="nav-link " href="/contact-us">${ajitesh}</a><p>${ravikant}</p></li>
                               
                                 </ul>
                             </div>
