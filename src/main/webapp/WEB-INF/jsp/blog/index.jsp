@@ -19,8 +19,8 @@
 <meta name="keywords" content=""/>
 <link rel="canonical" href="localhost:8081/blog"/>
 
-<link rel="stylesheet" type="text/css" href="/resources/css/home.css">
-<link rel="stylesheet" type="text/css" href="/resources/css/demo.css">
+<link rel="stylesheet" type="text/css" href="/javawebpath/resources/css/home.css">
+<link rel="stylesheet" type="text/css" href="/javawebpath/resources/css/demo.css">
 													
 <link rel="shortcut icon" href="/resources/images/favicon.png" type="image/x-icon">
 

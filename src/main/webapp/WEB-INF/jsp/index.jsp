@@ -25,11 +25,11 @@
 <link rel="alternate" href="#"/>	
 
 
-<link rel="stylesheet"  href="/resources/css/home.css">
-<link rel="stylesheet"  href="/resources/css/demo.css">
-<link rel="stylesheet"  href="/resources/css/homepagebad0.css">
-<link rel="stylesheet"  href="/resources/css/owl.carousel.min.css">
-<link rel="shortcut icon" href="/resources/images/favicon.png" type="image/x-icon">
+<link rel="stylesheet"  href="/javawebpath/resources/css/home.css">
+<link rel="stylesheet"  href="/javawebpath/resources/css/demo.css">
+<link rel="stylesheet"  href="/javawebpath/resources/css/homepagebad0.css">
+<link rel="stylesheet"  href="/javawebpath/resources/css/owl.carousel.min.css">
+<link rel="shortcut icon" href="/javawebpath/resources/images/favicon.png" type="image/x-icon">
 <jsp:include page="header.jsp" />
 <div id="main-wrapper" role="main">
   <jsp:include page="engine.jsp" />
