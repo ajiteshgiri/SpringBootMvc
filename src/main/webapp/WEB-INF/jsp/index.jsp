@@ -37,7 +37,7 @@
                         <div class="container">
                             <div class="title-dlist">
                         
-                                <p>Destination Lists wrong data showing</p>
+                                <p>Destination Lists</p>
                                 <h2>Explore the destination</h2>
                              
                       
